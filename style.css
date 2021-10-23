@@ -109,6 +109,12 @@ form button:hover{
   background: #4534fe;
 }
 
+.quarter {
+    height: 100px;
+    width: 100px;
+    align-items: center;
+}
+
 .info-box1 {
     padding-top: 20px;
     float: left;
