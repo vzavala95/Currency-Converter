@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block buttons %}
+
+{% endblock %}
+{% block header2 %}
+    {% if title == -1 %}
+        <p>Please search for another term.</p>
+    {% else %}
+        <h2>
+            <a href="{{wiki}}">
+                {{title}}
+            </a>
+        </h2>
+    {% endif %}
+{% endblock %}
+{% block image %}
+    {% if title == -1 %}
+        <p></p>
+    {% else %}
+        <img src="{{picture}}">
+    {% endif %}
+{% endblock %}
+{% block content %}
+    {% if title == -1 %}
+        <p></p>
+    {% else %}
+        <p>
+            {{content}}
+    {% endif %}
+{% endblock %}
