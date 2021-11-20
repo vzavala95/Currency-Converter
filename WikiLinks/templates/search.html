@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block buttons %}
+{% endblock %}
+
+{% block header2 %}
+    {% if title == -1 %}
+        <p>Please search for another term.</p>
+    {% else %}
+        <h2>
+            <p>Click the link below to learn more about your search term!</p>
+            <a href="{{wiki}}">
+                {{title}}
+            </a>
+        </h2>
+    {% endif %}
+{% endblock %}
+{% block content %}
+    {% if title == -1 %}
+        <p></p>
+    {% else %}
+            {{content}}
+    {% endif %}
+{% endblock %}

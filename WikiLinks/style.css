@@ -1,0 +1,135 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+  background: #8FBC8F;
+}
+::selection{
+  color: #fff;
+  background: #675AFE;
+}
+.wrapper{
+  width: 800px;
+  padding: 100px;
+  border-radius: 7px;
+  background: #F5F5DC;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+.wrapper header{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+}
+.wrapper form{
+  margin: 40px 0 20px 0;
+}
+form :where(input, select, button){
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+form p{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+form input{
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 1px solid #999;
+}
+form input:focus{
+  padding: 0 14px;
+  border: 2px solid #675AFE;
+}
+form .drop-list{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.drop-list .select-box{
+  display: flex;
+  width: 150px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 1px solid #999;
+  background: rgb(255,255,255)
+}
+.select-box img{
+  max-width: 25px;
+}
+.select-box select{
+  font-size: 13px;
+  background: none;
+  margin-left: 0 -45px 0 45px;
+}
+.select-box select::-webkit-scrollbar{
+  width: 8px;
+}
+.select-box select::-webkit-scrollbar-track{
+  background: #fff;
+}
+.select-box select::-webkit-scrollbar-thumb{
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+.drop-list .icon{
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 45px;
+}
+form .exchange-rate{
+  font-size: 17px;
+  margin: 20px 0 30px;
+}
+form button{
+  height: 52px;
+  color: #black;
+  font-size: 17px;
+  cursor: pointer;
+  background: #8FBC8F;
+  transition: 0.3s ease;
+}
+form button:hover{
+  background: #228B22;
+  color: #ffffff;
+}
+
+form clearbtn {
+  height: 52px;
+  color: #black;
+  font-size: 17px;
+  cursor: pointer;
+  background: #8FBC8F;
+  transition: 0.3s ease;
+}
+form clearbtn:hover{
+  background: #228B22;
+  color: #ffffff;
+}
+
+.info-box1 {
+    padding-top: 20px;
+    float: left;
+}
+
+.info-box2 {
+    padding-top: 20px;
+    float: right;
+}
